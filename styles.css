@@ -1,0 +1,166 @@
+:root{
+--White: hsl(0, 0%, 100%);
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+--Brown-800: hsl(14, 45%, 36%);
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+--place-holder: red;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+.outfit-bold {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+*,*::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+ol li::marker{
+    color:  var(--Brown-800);
+    font-weight: bold;
+}
+
+li{
+    padding: .5rem 0 .5rem 1rem;
+    margin-left: 1rem;
+}
+
+p{
+    padding-bottom: 2rem;
+}
+
+.young-serif{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.outfit{
+    font-family: "outfit", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.bold-nutrition{
+    color: var(--Brown-800);
+}
+
+.td-bold{
+    font-weight: bold;
+}
+
+.round-corners{
+    border-radius: 1rem;
+}
+
+.spacer-lg{
+    margin: 1rem 0 1rem 0;
+}
+
+
+
+/* .bullet-space{
+    padding: 0 .5rem 0 1rem;
+} */
+
+.headding-space{
+    padding: 1rem 0;
+}
+
+.bottom-border{
+    border-bottom: .1rem solid var(--Stone-150);
+    padding-bottom: 1rem;
+}
+
+.move-over{
+    padding-left: 1rem;
+}
+
+body{
+    background-color: var(--Stone-100);
+    padding: 5rem 0 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.recipe-card{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    background-color: var(--White);
+    padding: 2.2rem 3rem;
+}
+
+.recipe-card h1{
+    word-spacing: -.2rem;
+    color: var(--Stone-900);
+    padding: 2rem 0 1rem 0;
+    font-size: 2.1rem;
+}
+.recipe-card h3{
+    color: var(--Brown-800);
+    font-size: 1.9rem;
+}
+
+.recipe-card ul li::marker{
+    color: var(--Brown-800);
+}
+
+.recipe-prep{
+    background-color: var(--Rose-50);
+    padding:  1rem 1rem;
+}
+
+.recipe-prep li{
+    margin-left: 2rem;
+}
+
+.recipe-prep h2{
+    color: var(--Rose-800);
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+tr:not(:last-child){
+    border-bottom: .1rem solid var(--Stone-150);
+    
+}
+td{
+    padding: 1rem 0;
+}
+
+@media screen and (max-width:500px) {
+    .recipe-card{
+        width: 90%;
+    }
+.recipe-card h1{
+    font-size: 2rem;
+} 
+}
